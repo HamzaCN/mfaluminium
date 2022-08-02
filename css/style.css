@@ -1351,6 +1351,79 @@ header#pt-header.pt-header-style-2 .pt-toggle-btn a:after {
 .admin-bar header#pt-header.pt-header-style-1 {
 	top: 32px;
 }
+/* Slider Styles*/
+.carousel-item{
+	height: 100vh;
+	min-height: 350px;
+	background: no-repeat scroll center;
+	background-size: cover;
+
+}
+.carousel-item::before{
+	content: "";
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.5);
+	opacity: 0.7;
+}
+.carousel-caption{
+	bottom: 200px;
+	padding-left: 120px;
+	padding-right: 120px;
+}
+.carousel-caption h5{
+	font-size: 100px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 10px;
+
+}
+.carousel-caption p{
+	font-size: 20px;
+	color: #fff;
+	margin-bottom: 10px;
+}
+.slider-btn{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.slider-btn .btn{
+	background-color: #FF631B;
+	columns: var(--white-color);
+	border-radius: 0;
+	padding: 1rem 1.6rem;
+	font-size: 1rem;
+	margin-right: 10px;
+
+}
+.slider-btn .btn-2{ 
+	background-color: white !important;
+}
+@media only screen and (max-width: 600px) { 
+	.carousel-caption{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.carousel-caption h5{
+		font-size: 50px;
+	}
+	.carousel-caption p{
+		font-size: 15px;
+	}
+	.slider-btn{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.slider-btn .btn{
+		font-size: 0.8rem;
+	}
+}
+
+
 
 @media(max-width:767px) {
 	.admin-bar header#pt-header {
